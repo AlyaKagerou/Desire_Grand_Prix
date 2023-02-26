@@ -117,7 +117,7 @@ body {
     color: #eee;
     line-height: 45px;
     font-size: 40px;
-    margin-top: -2.3rem;
+    margin: -2.3rem 0 1.5rem;
     font-weight: 400;
 }
 
@@ -136,7 +136,7 @@ body {
     background-color: #d9d9d9
 }
 
-.row {
+.row-jumbo {
     flex-wrap: wrap-reverse;
 }
 
@@ -144,6 +144,52 @@ body {
     margin: 13rem 0px;
 }
 
+.about-dgp {
+    background-image: url(img/about.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 10rem;
+}
+
+.title-about {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.desc {
+    font-size: 22px;
+    text-align: justify;
+}
+
+.row-about {
+    flex-wrap: wrap-reverse;
+}
+
+.slider {
+    position: relative;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.btn-np {
+    margin-left: 24rem;
+}
+
+.btn-nextprev {
+    border: none;
+    outline: none;
+    background-color: #0f0f0f;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    margin-left: 12px;
+    margin-top: -35px;
+}
 
 @media screen and (max-width:768px) {
     .toggler-icon {
@@ -242,5 +288,17 @@ body {
         line-height: 35px;
     }
 
+    .about-dgp {
+        padding-top: 3rem;
+    }
 
+    .text-about {
+        margin-top: -10px;
+        padding: 0 20px;
+        text-align: justify;
+    }
+
+    .btn-np {
+        margin-left: 19rem;
+    }
 }
