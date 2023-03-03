@@ -9,6 +9,7 @@
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="icon" href="img/Logo_DGP_White.png" type="image/png">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <link rel="stylesheet" href="style.css">
         <title>Welcome to Desire Grand Prix</title>
     </head>
@@ -75,38 +76,72 @@
 
         <!--about-->
         <section class="about" id="about">
-            <div class="container about-dgp">
-                <div class="row row-about">
-                    <div class="col-lg-6">
-                        <div class="text-about">
-                            <h1 class="title-about">About</h1>
-                            <p class="desc">Desire Grand Prix (DGP) is a tournament where participants transform into
-                                Kamen Riders and compete against each other by defeating the Jyamato and protecting the
-                                city. The winner of each game will be granted "the right to bring an ideal world to
-                                life" as the prize.</p>
-                        </div>
+            <div class="container">
+                <img src="img/about.png" class="img-fluid mt-5" alt="about">
+                <div class="row row-about d-flex justify-content-around align-items-center">
+                    <div class="col-lg-6 about-dgp">
+                        <h1 class="title-about">about</h1>
+                        <p class="desc">Desire Grand Prix (DGP) is a tournament where participants transform into
+                            Kamen Riders and compete against each other by defeating the Jyamato and protecting the
+                            city. The winner of each game will be granted "the right to bring an ideal world to
+                            life" as the prize.</p>
                     </div>
                     <div class="col-lg-6">
-                        <div class="slider">
-                            <div class="img-box">
-                                <img src="img/img-dgp1.png" alt="dgp1">
+                        <div class="swiper dgp">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/img-dgp1.png" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/img-dgp2.png" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/img-dgp3.png" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/img-dgp4.png" class="img-fluid"></div>
+                                <div class="swiper-slide"><img src="img/img-dgp5.png" class="img-fluid"></div>
                             </div>
-
-                            <!--next and prev buttons-->
-                            <div class="btn-np">
-                                <button class="btn-nextprev" onclick="prev()"><i class='bx bx-chevron-left bx-lg' style="color: #fff
-                                    ;"></i></button>
-                                <button class="btn-nextprev" onclick="next()"><i class='bx bx-chevron-right bx-lg'
-                                        style="color: #fff;"></i></button>
-                            </div>
+                            <button class="btn-prev"><i class='bx bx-chevron-left'></i></button>
+                            <button class="btn-next"><i class='bx bx-chevron-right'></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--about-->
+
+        <!--jyamato-->
+        <section class="jyamato" id="jyamato">
+            <div class="container">
+                <img src="img/Jyamato.png" class="img-fluid jyamato" alt="jyamato">
+                <div class="row row-jyamato d-flex justify-content-around align-items-center">
+                    <div class="col-lg-6">
+                        <img src="img/PawnJyamato.png" alt="PawnJyamato" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-jyamato">
+                            <h1 class="title-about">jyamato</h1>
+                            <p class="desc">The Jyamato are monsters that appear in Desire Grand Prix Game.
+                                They are a mysterious and hostile force whose origins and purposes are unknown, but it
+                                is
+                                said to be a threat to the human world. The Jyamato appear in a space called the Jyamar
+                                Area
+                                and is said to act according to orders. In order to protect the peace of the city, the
+                                Desire Grand Prix being held to target the threat of Jyamato.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--jyamato-->
+
+        <!--players-->
+        <!--players-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".dgp", {
+                navigation: {
+                    nextEl: ".btn-next",
+                    prevEl: ".btn-prev",
+                },
+            });
         </script>
     </body>
 

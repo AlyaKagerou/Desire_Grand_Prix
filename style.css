@@ -144,11 +144,13 @@ body {
     margin: 13rem 0px;
 }
 
-.about-dgp {
-    background-image: url(img/about.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-top: 10rem;
+.row-about {
+    flex-wrap: wrap-reverse;
+    margin-top: -10rem;
+}
+
+.row-jyamato {
+    margin-top: -6rem;
 }
 
 .title-about {
@@ -158,37 +160,23 @@ body {
 }
 
 .desc {
-    font-size: 22px;
+    font-size: 25px;
     text-align: justify;
 }
 
-.row-about {
-    flex-wrap: wrap-reverse;
-}
-
-.slider {
-    position: relative;
-    margin: 50px auto;
-    width: 90%;
-}
-
-.img-box img {
-    width: 100%;
-}
-
-.btn-np {
-    margin-left: 24rem;
-}
-
-.btn-nextprev {
-    border: none;
-    outline: none;
+.btn-next,
+.btn-prev {
     background-color: #0f0f0f;
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    margin-left: 12px;
-    margin-top: -35px;
+    margin: 10px 10px 0 0;
+    font-size: 40px;
+    border-radius: 8px;
+    width: 55px;
+    height: 55px;
+    color: #fff;
+}
+
+.jyamato {
+    margin-top: 2rem;
 }
 
 @media screen and (max-width:768px) {
@@ -288,17 +276,19 @@ body {
         line-height: 35px;
     }
 
-    .about-dgp {
-        padding-top: 3rem;
-    }
-
-    .text-about {
-        margin-top: -10px;
+    .row-about,
+    .row-jyamato {
+        margin-top: -2rem;
         padding: 0 20px;
-        text-align: justify;
     }
 
-    .btn-np {
-        margin-left: 19rem;
+    .about-dgp,
+    .about-jyamato {
+        padding-top: 2rem;
     }
+
+    .desc {
+        font-size: 20px;
+    }
+
 }
