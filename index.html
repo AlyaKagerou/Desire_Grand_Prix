@@ -136,9 +136,108 @@
                     <img src="img/Logo_DGP_White.png" class="img-fluid">
                 </div>
                 <h1 class="mt-4 title-players">Players</h1>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #DE3A2B;">
+                            <img src="img/KRGeats.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #71A600;">
+                            <img src="img/KRTycoon.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #EAAF10;">
+                            <img src="img/KRNaago.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #9A519B;">
+                            <img src="img/KRBuffa.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #EA7F97;">
+                            <img src="img/KRMerry.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #BFB42A;">
+                            <img src="img/KRGinpen.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #6EB7FF;">
+                            <img src="img/KRShirowe.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #2F322F;">
+                            <img src="img/KRDapaan.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #D35521;">
+                            <img src="img/KRPunkjack.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #C2B1A9;">
+                            <img src="img/KRKeilow.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #D9D9D9;">
+                            <img src="img/KRLetter.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #A37273;">
+                            <img src="img/KRNadgesparrow.png" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card-riders" style="background-color: #5C8EDB;">
+                            <img src="img/KRLopo.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn-rider-prev"><i class='bx bx-chevron-left'></i></button>
+                    <button class="btn-rider-next"><i class='bx bx-chevron-right'></i></button>
+                </div>       
             </div>
         </section>
         <!--players-->
+
+        <!---->
+        <section class="closing">
+            <div class="container p-5 text-center">
+                <h1 class="closing-text">who's will be the winner?</h1>
+                <p class="closing-desc">support your favorite rider!</p>
+            </div>
+        </section>
+        <!---->
+
+        <!--Footer-->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-1">
+                <div class="col-md-4 d-flex align-items-center footer">
+                    <span class="text-footer">&copy;2023 Copyright All Reserved | Made By Alya</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex footer-social">
+                    <li class="ms-3 link-footer"><i class='bx bxl-twitter bx-sm'></i></li>
+                    <li class="ms-3 link-footer"><i class='bx bxl-instagram bx-sm'></i></li>
+                    <li class="ms-3 link-footer"><i class='bx bxl-youtube bx-sm'></i></li>
+                    <li class="ms-3 link-footer"><i class='bx bxl-twitch bx-sm'></i></li>
+                </ul>
+            </footer>
+        </div>
+        <!--Footer-->
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>
@@ -148,6 +247,28 @@
                 navigation: {
                     nextEl: ".btn-next",
                     prevEl: ".btn-prev",
+                },
+            });
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                navigation:{
+                    nextEl: ".btn-rider-next",
+                    prevEl: ".btn-rider-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                        spaceBetween: 10,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 10,
+                    },
                 },
             });
         </script>
